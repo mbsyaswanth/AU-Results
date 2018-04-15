@@ -4,6 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Results</title>
+    <style>
+      #viewresults{
+          display: none;
+      }
+      body, html{
+        height: 100%;
+        margin: 0px;
+      }
+      .resultquery{
+        text-align: center;
+      }
+    </style>
     <script type="text/javascript">
        function reg()
        {
@@ -13,6 +25,7 @@
          document.getElementById('1.2').value=regno;
          document.getElementById('2.1').value=regno;
          document.getElementById('2.2').value=regno;
+         document.getElementById('viewresults').style.display='block';
        }
     </script>
   </head>
@@ -23,6 +36,7 @@
       <input id="regno" type="text" name="regno" value="">
       <input type="button" name="submit" onclick="reg()" value="submit">
     </div>
+  <div id="viewresults">
   <div class="panel loginform">
  		<div class="panel-heading">
  			<h3>MS INTEGRATED COURSES SECOND YEAR 2.2</h3>
@@ -121,7 +135,7 @@
 		</div>
   </div>
   <!-- //ddafsd -->
-
+</div>
 
   </body>
 </html>
