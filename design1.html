@@ -58,6 +58,7 @@
              break;
            case '31':
              alert("result not published");
+             return false;
              // document.getElementsByName('serialno')[0].value='';
              // document.getElementsByName('course')[0].value='';
              // document.getElementsByName('degree')[0].value='';
@@ -67,6 +68,7 @@
              break;
            case '32':
              alert("result not published");
+             return false;
              // document.getElementsByName('serialno')[0].value='';
              // document.getElementsByName('course')[0].value='';
              // document.getElementsByName('degree')[0].value='';
@@ -76,6 +78,7 @@
              break;
            case '41':
              alert("result not published");
+             return false;
              // document.getElementsByName('serialno')[0].value='';
              // document.getElementsByName('course')[0].value='';
              // document.getElementsByName('degree')[0].value='';
@@ -85,6 +88,7 @@
              break;
            case '42':
              alert("result not published");
+             return false;
              // document.getElementsByName('serialno')[0].value='';
              // document.getElementsByName('course')[0].value='';
              // document.getElementsByName('degree')[0].value='';
@@ -105,7 +109,7 @@
     <div class="container">
       <div class="block animated zoomIn">
          <div class="content">
-           <form target="_blank" onsubmit="reg()" action="https://aucoe.info/RDA/resultsnew/result_grade.php" method="post" name="result">
+           <form target="_blank" onsubmit="return reg()" action="https://aucoe.info/RDA/resultsnew/result_grade.php" method="post" name="result">
               <div>
                 <input type="hidden" name="serialno" id="sno">
                 <input type="hidden" name="course">
