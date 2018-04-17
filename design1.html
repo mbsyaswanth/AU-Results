@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="d1style.css">
+    <link rel="stylesheet" href="animate.css">
+    <meta charset="utf-8">
+    <title>Results</title>
+    <script type="text/javascript">
+       function reg() {
+         var year=document.getElementById('year').value;
+         console.log(year);
+         if(document.getElementById('sem1').checked)
+         {
+           var sem=1;
+         }else{
+           var sem=2;
+         }
+         console.log(sem);
+         var expr = ""+year+sem;
+         switch (expr) {
+           case '11':
+              document.getElementsByName('serialno')[0].value='217';
+              document.getElementsByName('course')[0].value='MS';
+              document.getElementsByName('degree')[0].value='MS';
+              document.getElementsByName('table')[0].value='gradestructure3';
+              document.getElementsByName('appearing_year')[0].value='DECEMBER 2015';
+              document.getElementsByName('Date_time')[0].value='2016-04-22 13:02:49';
+              document.getElementsByName('revdate')[0].value='2016-05-07';
+              break;
+           case '12':
+             document.getElementsByName('serialno')[0].value='364';
+             document.getElementsByName('course')[0].value='MS INTEGRATED';
+             document.getElementsByName('degree')[0].value='MS Integrated';
+             document.getElementsByName('table')[0].value='structure3';
+             document.getElementsByName('appearing_year')[0].value='MAY 2016';
+             document.getElementsByName('Date_time')[0].value='2016-08-09 16:04:36';
+             document.getElementsByName('revdate')[0].value='2016-08-24';
+             break;
+           case '21':
+             document.getElementsByName('serialno')[0].value='531';
+             document.getElementsByName('course')[0].value='21 MS INTEGRATED ';
+             document.getElementsByName('degree')[0].value='21 MS INTEGRATED ';
+             document.getElementsByName('table')[0].value='gradestructure4';
+             document.getElementsByName('appearing_year')[0].value='NOVEMBER 2016';
+             document.getElementsByName('Date_time')[0].value='2017-03-21 16:53:04';
+             document.getElementsByName('revdate')[0].value='2017-04-01';
+             break;
+           case '22':
+             console.log('22 selected');
+             document.getElementsByName('serialno')[0].value='729';[0]
+             document.getElementsByName('course')[0].value='MS INTEGRATED COURSES';
+             document.getElementsByName('degree')[0].value='Ms Integrated Courses Second Year';
+             document.getElementsByName('table')[0].value='gradestructure4';
+             document.getElementsByName('appearing_year')[0].value='APRIL 2017';
+             document.getElementsByName('Date_time')[0].value='2017-09-06 14:51:02';
+             document.getElementsByName('revdate')[0].value='2017-09-22';
+             break;
+           case '31':
+             alert("result not published");
+             // document.getElementsByName('serialno')[0].value='';
+             // document.getElementsByName('course')[0].value='';
+             // document.getElementsByName('degree')[0].value='';
+             // document.getElementsByName('appearing_year')[0].value='';
+             // document.getElementsByName('Date_time')[0].value='';
+             // document.getElementsByName('revdate')[0].value='';
+             break;
+           case '32':
+             alert("result not published");
+             // document.getElementsByName('serialno')[0].value='';
+             // document.getElementsByName('course')[0].value='';
+             // document.getElementsByName('degree')[0].value='';
+             // document.getElementsByName('appearing_year')[0].value='';
+             // document.getElementsByName('Date_time')[0].value='';
+             // document.getElementsByName('revdate')[0].value='';
+             break;
+           case '41':
+             alert("result not published");
+             // document.getElementsByName('serialno')[0].value='';
+             // document.getElementsByName('course')[0].value='';
+             // document.getElementsByName('degree')[0].value='';
+             // document.getElementsByName('appearing_year')[0].value='';
+             // document.getElementsByName('Date_time')[0].value='';
+             // document.getElementsByName('revdate')[0].value='';
+             break;
+           case '42':
+             alert("result not published");
+             // document.getElementsByName('serialno')[0].value='';
+             // document.getElementsByName('course')[0].value='';
+             // document.getElementsByName('degree')[0].value='';
+             // document.getElementsByName('appearing_year')[0].value='';
+             // document.getElementsByName('Date_time')[0].value='';
+             // document.getElementsByName('revdate')[0].value='';
+             break;
+           default:
+            console.log('Sorry, we are out of ' + expr + '.');
+           }
+       }
+    </script>
+  </head>
+  <body class="animated fadeIn main">
+    <div class="heading ">
+      M S Integrated 2015-16 admitted batch Results
+    </div>
+    <div class="container">
+      <div class="block animated zoomIn">
+         <div class="content">
+           <form target="_blank" onsubmit="reg()" action="https://aucoe.info/RDA/resultsnew/result_grade.php" method="post" name="result">
+              <div>
+                <input type="hidden" name="serialno" id="sno">
+                <input type="hidden" name="course">
+                <input type="hidden" name="degree">
+                <input type="hidden" name="appearing_year">
+                <input type="hidden" name="Date_time">
+                <input type="hidden" name="table">
+                <input type="hidden" name="revdate">
+              </div>
+              <div>
+                <input class="regno" type="text" name="regno" value="" placeholder="Registration number" pattern="31[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]" required>
+                <input type="hidden" name="revfee" value="750">
+                <select class="regno" id='year' required>
+                  <option value="" selected disabled hidden>Choose Year</option>
+                  <option value="1">1st year</option>
+                  <option value="2">2nd year</option>
+                  <option value="3">3rd year</option>
+                  <option value="4">4th year</option>
+                </select>
+                <div class="sem" id="sem">
+                  <label for="sem1"><input id="sem1" name="sem" type="radio" checked value="1">semester-1</label>
+                  <label for="sem2"><input id="sem2" name="sem" type="radio" value="2">semester-2</label>
+                </div>
+                <input class="regsubmit" type="submit" name="button" value="Get my mark list">
+              </div>
+           </form>
+         </div>
+      </div>
+    </div>
+  </body>
+</html>
